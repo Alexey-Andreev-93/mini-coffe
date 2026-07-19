@@ -1,32 +1,34 @@
-# React + TypeScript + Vite
+# ☕ Brew & Bean — Coffee Shop
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Мини-приложение кофейни на React + TypeScript.
+Заказ напитков и десертов с генерацией чека.
 
-Currently, two official plugins are available:
+## Стек
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- React 19 + TypeScript
+- Tailwind CSS 4
+- Vite 8
 
-## React Compiler
+## Возможности
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Просмотр меню (кофе / десерты)
+- Добавление товаров в корзину
+- Оформление заказа с указанием имени
+- Генерация номера чека
 
-## Expanding the Oxlint configuration
+## Запуск
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```bash
+npm install
+npm run dev
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## Планы
+
+- [ ] Бэкенд на Node.js + Express
+- [ ] Хранение заказов в базе данных
+- [ ] Деплой на Yandex Cloud
+
+## Ссылка
+
+https://github.com/Alexey-Andreev-93/mini-coffee
